@@ -1,6 +1,9 @@
 {
   "type": "module",
   "dependencies": {
+    "advance": "^1.0.5",
+    "advanced-calculator": "^1.1.1",
+    "calculator": "^0.1.12",
     "dotenv": "^16.4.5",
     "openai": "^4.28.4"
   }
