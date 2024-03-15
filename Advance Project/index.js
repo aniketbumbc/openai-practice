@@ -12,9 +12,12 @@ const messages = [
 ];
 
 const funcations = {
+  // function call by openai
   calculate({ exp }) {
     return math.evaluate(exp);
   },
+
+  // another open ai function call
   async genrateImage({ prompt }) {
     const result = await openai.images.generate({ prompt });
     console.log(result?.data[0]?.url);
