@@ -1,1 +1,13 @@
-init git 
+init git and create README.md file
+
+
+1. conda create -p env python=3.8 -y  create env for project
+
+
+Requirements Project
+
+1. OpenAI Api
+2. Langchain
+3. streamlit (API)
+4. python-dotenv ( )
+5. pyPDF2
