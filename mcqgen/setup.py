@@ -8,6 +8,6 @@ setup(
     author='aniket',
     author_email='aniket.umbc@gmail.com',
     install_requires=['openai', 'langchain',
-                      'stremlit', 'python-dotenv', 'PyPDF2'],
+                      'streamlit', 'python-dotenv', 'PyPDF2'],
     packages=find_packages()
 )

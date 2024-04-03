@@ -3,7 +3,7 @@ import json
 import pandas as pd
 import traceback
 from dotenv import load_dotenv
-from logger import logging
+from src.mcqgenerator.logger import logging
 #from utils import read_file,get_table_data
 
 
@@ -33,7 +33,7 @@ create a quiz  of {number} multiple choice questions for {subject} students in {
 Make sure the questions are not repeated and check all the questions to be conforming the text as well.
 Make sure to format your response like  RESPONSE_JSON below  and use it as a guide. \
 Ensure to make {number} MCQs
-### RESPONSE_JSON
+
 {response_json}
 
 """
