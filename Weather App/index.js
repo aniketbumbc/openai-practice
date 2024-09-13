@@ -6,6 +6,7 @@ import fs from 'fs';
 console.log(process.env.OPENAI_API_KEY);
 
 const secretKey = process.env.OPENAI_API_KEY;
+console.log(secretKey);
 const openai = new OpenAI({
   apiKey: secretKey,
 });
