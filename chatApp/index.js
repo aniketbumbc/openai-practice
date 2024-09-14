@@ -2,8 +2,6 @@ import express from 'express';
 import 'dotenv/config';
 import OpenAI from 'openai';
 
-console.log(process.env.OPENAI_API_KEY);
-
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 const app = express();
 
@@ -15,8 +13,6 @@ async function main(question) {
 
   return completion.choices[0]?.message?.content;
 }
-
-//main();
 
 app.get('/', (req, res) => {
   res.send('Hello World Server Js');
