@@ -14,10 +14,6 @@ async function main(question) {
   return completion.choices[0]?.message?.content;
 }
 
-app.get('/', (req, res) => {
-  res.send('Hello World Server Js');
-});
-
 app.get('/ask', async (req, res) => {
   const response = await main(req.query.question);
   const data = response.replace(/(\r\n|\n|\r)/gm, '');
