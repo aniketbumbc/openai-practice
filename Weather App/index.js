@@ -64,6 +64,7 @@ async function callChatGpt() {
 
   while (true) {
     console.log('*********** FIRST REQUEST ************');
+
     console.log(messages);
 
     const response = await openai.chat.completions.create({
